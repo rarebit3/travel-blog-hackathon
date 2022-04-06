@@ -1,5 +1,5 @@
-const Posts = require('../models/Posts')
-const Comments = require('../models/Comments')
+const {Posts, Comments} = require('../models')
+
 
 const getPostDetails = async (req, res) => {
   try {

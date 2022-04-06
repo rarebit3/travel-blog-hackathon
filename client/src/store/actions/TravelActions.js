@@ -19,8 +19,7 @@ export const LoadLikes = (id) => {
   return async (dispatch) => {
     try {
       const likes = await GetLikes(id)
-
-      dispatch({
+        dispatch({
         type: GET_LIKES,
         payload: likes
       })
