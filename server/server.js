@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const postController = require('./controller/PostController')
+const postController = require('./controllers/PostController')
 const db = require('./db')
 const logger = require('morgan')
 
