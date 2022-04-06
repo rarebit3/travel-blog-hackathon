@@ -22,11 +22,15 @@ const BlogPosts = (props) => {
       }, [])
     
     return (
-        <div className="blog-post-grid">
+        <div className="blog-post-container">
             {props.blogState.blogPosts.map((blogPost) => (
-            <ul className='location-title' key={blogPost.id}>
+            <ul className='location-list' key={blogPost.id}>
+            <h2>{blogPost.title}</h2>
+            <h3>Continent: {blogPost.continent}</h3>
             <h3>Country: {blogPost.country}</h3>
-            <h3>City: {blogPost.city}</h3>
+            <h3>City: {blogPost.location}</h3>
+            <h5>Author: {blogPost.author}</h5>
+            <p>{blogPost.story}</p>
             <image src={`${blogPost.image}`} />
             <Likes />
             <Comments />
