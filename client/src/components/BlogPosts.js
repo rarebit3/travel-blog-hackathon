@@ -6,6 +6,7 @@ import Comments from "./Comments";
 import Likes from "./Likes";
 
 const mapStateToProps = ({ postState }) => {
+  
   return { postState };
 };
 
@@ -14,6 +15,7 @@ const mapDispatchToProps = (dispatch) => {
     fetchBlogPosts: () => dispatch(LoadPosts()),
   };
 };
+
 
 const BlogPosts = (props) => {
   useEffect(() => {
